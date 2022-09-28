@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: black;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+.i{
+    height: 90vh;
+    width: 100%;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;  
+}
+.btn-warning{
+    border-radius: 50px;
+}

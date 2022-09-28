@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background: black;
+}
+.ti{
+    font-family: serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.actualizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background: red;
+}
+.form-label{
+    color: white;
+    margin-top: 5px;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+}
+
+.marca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background: black;
+}
+.ma{
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+}
+
+@media(max-width:600px){
+    .ti{
+        font-size: 20px;
+    }
+    .form-label{
+        display: none;
+    }
+    
+    .col-md-12{
+        margin-top: 15px;
+    }
+    .btn{
+        width: 100%;
+        font-size: 10px;
+    }
+   
+    
+    
+    
+}

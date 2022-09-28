@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="index.htm">indexController</prop>
+                <prop key="login.htm">Controller_login</prop>
+                <prop key="calendario.htm">calendarioController</prop>
+                <prop key="menu.htm">menuController</prop>
+                 
+                <prop key="lenero.htm">Controller_enero</prop>
+                <prop key="cenero.htm">Controller_enero</prop>
+                <prop key="uenero.htm">Controller_enero</prop>
+                <prop key="denero.htm">Controller_enero</prop>
+                <prop key="reporte.htm">Controller_enero</prop>
+               
+                <!--crud febrero-->
+                <prop key="lfebrero.htm">Controller_febrero</prop>
+                <prop key="cfebrero.htm">Controller_febrero</prop>
+                <prop key="ufebrero.htm">Controller_febrero</prop>
+                <prop key="dfebrero.htm">Controller_febrero</prop>
+                <prop key="rfebrero.htm">Controller_febrero</prop>
+                
+                <!--crud marzo-->
+                <prop key="lmarzo.htm">Controller_marzo</prop>
+                <prop key="cmarzo.htm">Controller_marzo</prop>
+                <prop key="umarzo.htm">Controller_marzo</prop>
+                <prop key="dmarzo.htm">Controller_marzo</prop>
+                <prop key="rmarzo.htm">Controller_marzo</prop>
+                <!--crud abril-->
+                <prop key="labril.htm">Controller_abril</prop>
+                <prop key="cabril.htm">Controller_abril</prop>
+                <prop key="uabril.htm">Controller_abril</prop>
+                <prop key="dabril.htm">Controller_abril</prop>
+                <prop key="rabril.htm">Controller_abril</prop>
+               
+                <!--crud mayo-->
+                <prop key="lmayo.htm">Controller_mayo</prop>
+                <prop key="amayo.htm">Controller_mayo</prop>
+                <prop key="umayo.htm">Controller_mayo</prop>
+                <prop key="dmayo.htm">Controller_mayo</prop>
+                <prop key="rmayo.htm">Controller_mayo</prop>
+                <!--crud junio-->
+                 
+                <prop key="ljunio.htm">Controller_junio</prop>
+                <prop key="ajunio.htm">Controller_junio</prop>
+                <prop key="ujunio.htm">Controller_junio</prop>
+                <prop key="djunio.htm">Controller_junio</prop>
+                <prop key="rjunio.htm">Controller_junio</prop>
+                
+                <!--crud julio-->
+                <prop key="ljulio.htm">Controller_julio</prop>
+                <prop key="ajulio.htm">Controller_julio</prop>
+                <prop key="ujulio.htm">Controller_julio</prop>
+                <prop key="djulio.htm">Controller_julio</prop>
+                <prop key="rjulio.htm">Controller_julio</prop>
+                
+                <!--crud agosto-->
+                <prop key="lagosto.htm">Controller_agosto</prop>
+                <prop key="aagosto.htm">Controller_agosto</prop>
+                <prop key="uagosto.htm">Controller_agosto</prop>
+                <prop key="dagosto.htm">Controller_agosto</prop>
+                <prop key="ragosto.htm">Controller_agosto</prop>
+                
+                <!--crud septiembre-->
+                <prop key="lseptiembre.htm">Controller_septiembre</prop>
+                <prop key="cseptiembre.htm">Controller_septiembre</prop>
+                <prop key="aseptiembre.htm">Controller_septiembre</prop>
+                <prop key="dseptiembre.htm">Controller_septiembre</prop>
+                <prop key="rseptiembre.htm">Controller_septiembre</prop>
+                
+                <!--crud octubre-->
+                <prop key="loctubre.htm">Controller_octubre</prop>
+                <prop key="aoctubre.htm">Controller_octubre</prop>
+                <prop key="uoctubre.htm">Controller_octubre</prop>
+                <prop key="doctubre.htm">Controller_octubre</prop>
+                <prop key="roctubre.htm">Controller_octubre</prop>
+                
+                <!--crud noviembre-->
+                <prop key="lnoviembre.htm">Controller_noviembre</prop>
+                <prop key="anoviembre.htm">Controller_noviembre</prop>
+                <prop key="unoviembre.htm">Controller_noviembre</prop>
+                <prop key="dnoviembre.htm">Controller_noviembre</prop>
+                <prop key="rnoviembre.htm">Controller_noviembre</prop>
+                
+                <!--crud diciembre-->
+                <prop key="ldiciembre.htm">Controller_diciembre</prop>
+                <prop key="adiciembre.htm">Controller_diciembre</prop>
+                <prop key="udiciembre.htm">Controller_diciembre</prop>
+                <prop key="ddiciembre.htm">Controller_diciembre</prop>
+                <prop key="rdiciembre.htm">Controller_diciembre</prop>
+                
+                <!--crud cliente deudor-->
+                <prop key="ldeudor.htm">Controller_cliente_deudor</prop>
+                <prop key="adeudor.htm">Controller_cliente_deudor</prop>
+                <prop key="ddeudor.htm">Controller_cliente_deudor</prop>
+                <prop key="rdeudor.htm">Controller_cliente_deudor</prop>
+                <prop key="redeudor.htm">Controller_cliente_deudor</prop>
+                
+                <!--crud cliente-->
+                <prop key="lcliente.htm">Controller_cliente</prop>
+                <prop key="acliente.htm">Controller_cliente</prop>
+                <prop key="dcliente.htm">Controller_cliente</prop>
+                <prop key="rcliente.htm">Controller_cliente</prop>
+                
+                <!--crud proveedores-->
+                <prop key="lproveedores.htm">Controller_proveedores</prop>
+                <prop key="aproveedores.htm">Controller_proveedores</prop>
+                <prop key="dproveedores.htm">Controller_proveedores</prop>
+                <prop key="rproveedores.htm">Controller_proveedores</prop>
+                
+                
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" />
+    
+    <bean name="Controller_login" class="Controller_login.login"/>
+    <bean name="Controller_enero" class="Controller_enero.controlador"/>
+    <bean name="Controller_febrero" class="Controller_febrero.controlador"/>
+    <bean name="Controller_marzo" class="Controller_marzo.controlador"/>
+    <bean name="Controller_abril" class="Controller_abril.controlador"/>
+    <bean name="Controller_mayo" class="Controller_mayo.controlador"/>
+    <bean name="Controller_junio" class="Controller_junio.controlador"/>
+    <bean name="Controller_julio" class="Controller_julio.controller"/>
+    <bean name="Controller_agosto" class="Controller_agosto.controlador"/>
+    <bean name="Controller_septiembre" class="Controller_septiembre.controlador"/>
+    <bean name="Controller_octubre" class="Controller_octubre.controlador"/>
+    <bean name="Controller_noviembre" class="Controller_noviembre.controlador"/>
+    <bean name="Controller_diciembre" class="Controller_diciembre.controlador"/>
+    <bean name="Controller_cliente_deudor" class="Controller_cliente_deudor.controlador"/>
+    <bean name="Controller_cliente" class="Controller_cliente.controlador"/>
+    <bean name="Controller_proveedores" class="Controller_proveedores.controlador"/>
+    <!--
+    The index controller.
+    -->
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="index" />
+    
+    <bean name="calendarioController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="calendario" />
+    
+    <bean name="menuController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="menu" />
+    
+
+    
+     
+
+</beans>
